@@ -140,7 +140,7 @@ h2 {
 /*	1.2 - Body Copy       */
 
 #about p {
-	padding: 4rem;
+	padding: 10% 15%;
 }
 
 #about p, #solutions p {
@@ -208,6 +208,10 @@ fieldset input {
 	-webkit-appearance: radio;
 }
 
+fieldset > div > .col-1-2 > .col-1-2 {
+	padding-right: 0;
+}
+
 form a {
 	padding: 1rem 3rem;
 }
@@ -253,6 +257,10 @@ form a:hover {
 
 footer span {
 	display: none;
+}
+
+header ul {
+	-webkit-padding-start: 0px;
 }
 
 li {
@@ -379,7 +387,7 @@ fieldset {
 }
 
 #why .col-1-3 section {
-	padding: 2.5rem 2.2rem;
+	padding: 12% 12% 0;
 	height: 13rem;
 }
 
@@ -395,7 +403,7 @@ header .col-1-4 {
 }
 
 header .col-3-4 {
-	padding: 10rem 0 0 10rem;
+	padding: 15% 0 0 15%;
 }
 
 /*	3.3 - Site Footer       */
@@ -432,19 +440,14 @@ footer {
 		text-align: center;
 	}
 	
-	.wrapper, header .col-1-4, header .col-3-4, .col-1-3, .col-2-3, .col-3-4, form div:first-child .col-1-2 {
+	.wrapper, header .col-1-4, header .col-3-4, .col-1-3, .col-2-3, .col-3-4, form > div > .col-1-2, fieldset > div > .col-1-2 {
 		width: 100%;
 	}
 	
-	[class*="col-"] {
-		padding-right: 0px;
+	header .col-1-4, header .col-3-4, .col-1-3, .col-2-3, .col-3-4, fieldset .col-1-2 {
+		padding-right: 0;
 	}
-	
-	header .col-1-4, header .col-3-4, .col-1-3, .col-2-3, .col-3-4 {
-		padding-right: 0
-	}
-	
-	
+
 	.col-1-4 {
 		width: 50%;
 	}
@@ -493,6 +496,10 @@ footer {
 		padding-bottom: 2.5rem;
 	}
 	
+	#solutions .row:first-of-type {
+		padding-bottom: 0;
+	}
+
 	.wrapper > header {
 		margin: 0 3rem;
 	}
@@ -556,8 +563,9 @@ footer {
 	
 	fieldset label {
 		font-size: .8rem;
-		width: 100%;
 	}
+	
+	
 	
 	footer {
 		padding: 1.5rem 10%;
@@ -584,8 +592,9 @@ footer {
 		float: right;
 	}
 	
-	
-	
+	fieldset > div > .col-1-2 > .col-1-2 {
+		width: 100%;
+	}
 	
 	
 	#why .col-1-3:nth-child(3) {
